@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Aladin|Muli&display=swap');
+
+:root {
+    font-family: 'Muli', sans-serif;
+    --main-color: black;
+    --accent-color: black;
+
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+h1, h2, h3, p, div, nav, header, footer {
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    background-image: url(../img/stripe.jpg);
+    min-height: 200px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header nav .logo {
+    font-family: 'Aladin', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+
+header nav .menu {
+    font-size: 1rem;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+header nav .menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+header nav .menu a:hover {
+    border: 1px solid var(--accent-color);
+
+}
+
+@media (min-width: 550px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+
+    header .menu {
+        flex: 1;
+    }
+}
