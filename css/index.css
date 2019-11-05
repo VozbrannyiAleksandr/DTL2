@@ -19,27 +19,32 @@ h1, h2, h3, p, div, nav, header, footer {
 
 header nav {
     background-image: url(../img/stripe.jpg);
-    min-height: 200px;
     background-position: center;
     background-size: cover;
+    justify-content: center;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    min-height: 100px;
+    max-height: 150px;
+    width: 100%;
+
 }
 
-header nav .logo {
+header .logo {
     font-family: 'Aladin', cursive;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
+    margin: 0;
 }
 
-header nav .menu {
+header .menu {
     font-size: 1rem;
     display: flex;
     list-style: none;
     justify-content: space-around;
     padding: 0;
+    margin: 0;
 }
 
 header nav .menu a {
@@ -55,13 +60,42 @@ header nav .menu a:hover {
 
 }
 
+header .banner p img{
+    width: 100%;
+}
+
 @media (min-width: 550px) {
     header nav {
-        display: flex;
-        align-items: center;
-    }
-
-    header .menu {
+        min-height: 125px;
+        max-height: 175px;
+        width: 100%;
         flex: 1;
+        flex-direction: row;
     }
+}
+
+header .banner  h3 {
+    font-family: 'Muli', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0;
+}
+
+header .closing-stripe img {
+    min-height: 25px;
+    max-height: 75px;
+    width: 100%;
+}
+
+main .form h3 {
+    font-family: 'Muli', sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0;
+}
+
+main .form form {
+    font-family: 'Muli', sans-serif;
+    font-size: 0.7rem;
+    text-align: center;
 }
