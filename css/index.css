@@ -12,42 +12,51 @@ body {
     margin: auto;
 }
 
-h1, h2, h3, p, div, nav, header, footer {
+h1, h2, h3, h4, h5, h6, p, div, nav, header, footer {
     margin: 0;
     padding: 0;
 }
 
-header nav {
+.conteiner {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.header-stripe {
     background-image: url(../img/stripe.jpg);
     background-position: center;
     background-size: cover;
-    justify-content: center;
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: 100px;
-    max-height: 150px;
+    justify-content: center;
+    min-height: 75px;
+    max-height: 200px;
     width: 100%;
-
 }
 
-header .logo {
+.top {
+
+    justify-content: center;
+}
+
+.logo {
     font-family: 'Aladin', cursive;
     font-size: 1.5rem;
     text-align: center;
     margin: 0;
 }
 
-header .menu {
+.menu {
     font-size: 1rem;
     display: flex;
     list-style: none;
     justify-content: space-around;
     padding: 0;
-    margin: 0;
+    margin: 1vh;
 }
 
-header nav .menu a {
+.menu a {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--main-color);
@@ -55,26 +64,39 @@ header nav .menu a {
     padding: 5px;
 }
 
-header nav .menu a:hover {
+.menu a:hover {
     border: 1px solid var(--accent-color);
 
 }
 
-header .banner p img{
+.banner img {
+    width: 100%;
+}
+.closing-stripe {
+    background-image: url(../img/stripecrop.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 25px;
+    max-height: 75px;
     width: 100%;
 }
 
 @media (min-width: 550px) {
-    header nav {
+    headernav {
         min-height: 125px;
         max-height: 175px;
         width: 100%;
         flex: 1;
         flex-direction: row;
     }
+
 }
 
-header .banner  h3 {
+.form-article  h3 {
     font-family: 'Muli', sans-serif;
     font-size: 0.8rem;
     text-align: center;
@@ -87,15 +109,92 @@ header .closing-stripe img {
     width: 100%;
 }
 
-main .form h3 {
-    font-family: 'Muli', sans-serif;
-    font-size: 0.9rem;
-    text-align: center;
-    margin: 0;
+.form h3 {
+    align-content: center;
 }
 
-main .form form {
-    font-family: 'Muli', sans-serif;
-    font-size: 0.7rem;
-    text-align: center;
+.wrapper_form {
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: gainsboro;
+    border-radius: 5px;
+    padding: 15px;
 }
+
+select, option, input, label, button, textarea {
+    padding: 0.2rem 1rem;
+    font-size: 1.2rem;
+    color: inherit;
+}
+
+.form-box {
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box label {
+    display: none;
+}
+
+.form-box input,
+.form-box select, {
+    flex-basis: 100%;
+}
+
+.form-box button {
+}
+
+.video-stripe {
+    background-image: url(../img/stripe.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 75px;
+    max-height: 200px;
+    width: 100%;
+}
+
+.video-trike video {
+    width: 100%;
+    height: auto;
+}
+
+.history-article {
+    background-image: url(../img/stripe.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 75px;
+    max-height: 200px;
+    width: 100%;
+}
+00000000000000000000000000000000000
+.history-photo {
+    background-image: url(../img/history-photo.jpg);
+    height: auto;
+    width: 100%;
+}
+00000000000000000000000000000000000000
+@media (min-width: 550px) {
+    .history-photo2 {
+    background-image: url(../img/history-photo2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 75px;
+    max-height: 200px;
+    width: 100%;
+    }
+
+
