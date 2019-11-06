@@ -93,7 +93,6 @@ h1, h2, h3, h4, h5, h6, p, div, nav, header, footer {
         flex: 1;
         flex-direction: row;
     }
-
 }
 
 .form-article  h3 {
@@ -176,13 +175,26 @@ select, option, input, label, button, textarea {
     max-height: 200px;
     width: 100%;
 }
-00000000000000000000000000000000000
-.history-photo {
-    background-image: url(../img/history-photo.jpg);
-    height: auto;
+
+.history-photo img {
     width: 100%;
+    height: auto;
 }
-00000000000000000000000000000000000000
+
+@media (min-width: 550px) {
+    .history-photo img {
+    float: left;
+    width: 450px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    }
+}
+
 @media (min-width: 550px) {
     .history-photo2 {
     background-image: url(../img/history-photo2.jpg);
@@ -196,5 +208,78 @@ select, option, input, label, button, textarea {
     max-height: 200px;
     width: 100%;
     }
+}
 
+.galery-article {
+    background-image: url(../img/stripe.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 75px;
+    max-height: 200px;
+    width: 100%;
+}
 
+.galery-photo img {
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 560px) {
+    .galery-photo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+@media (min-width: 660px) {
+    .galery-photo {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.location-article {
+    background-image: url(../img/stripe.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 75px;
+    max-height: 200px;
+    width: 100%;
+}.location-text {
+    font-size: 15px;
+}
+
+.stripe-footer {
+    background-image: url(../img/stripecrop.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 25px;
+    max-height: 75px;
+    width: 100%;
+}
+
+.contacts {
+    font-size: 10px;
+    background-image: url(../img/footer-photo.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 25px;
+    max-height: 75px;
+    width: 100%;
+}
