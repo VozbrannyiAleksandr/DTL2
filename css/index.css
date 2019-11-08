@@ -176,7 +176,13 @@ select, option, input, label, button, textarea {
     width: 100%;
 }
 
+.history {
+    flex-direction: column;
+}
+
 .history-photo img {
+    padding: 5px;
+    margin: 5px;
     width: 100%;
     height: auto;
 }
@@ -184,29 +190,25 @@ select, option, input, label, button, textarea {
 @media (min-width: 550px) {
     .history-photo img {
     float: left;
-    width: 450px;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
+    width: 50%;
+    height: auto;
     }
 }
 
+.history-text {
+    padding: 5px;
+    margin: 5px;
+}
+
+.history-photo1 img {
+    display: none;
+}
+
 @media (min-width: 550px) {
-    .history-photo2 {
-    background-image: url(../img/history-photo2.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 75px;
-    max-height: 200px;
-    width: 100%;
+    .history-photo1 img {
+    float: right;
+    width: 50%;
+    height: auto;
     }
 }
 
@@ -224,8 +226,10 @@ select, option, input, label, button, textarea {
 }
 
 .galery-photo img {
+    padding: 5px;
+    margin: 5px;
     display: block;
-    width: 100%;
+    width: 95%;
 }
 
 @media (min-width: 560px) {
@@ -242,6 +246,10 @@ select, option, input, label, button, textarea {
     }
 }
 
+.location {
+    flex-direction: column;
+}
+
 .location-article {
     background-image: url(../img/stripe.jpg);
     background-position: center;
@@ -253,8 +261,16 @@ select, option, input, label, button, textarea {
     min-height: 75px;
     max-height: 200px;
     width: 100%;
-}.location-text {
-    font-size: 15px;
+}
+
+.map img {
+    width: 75%;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+}
+.location-text {
+    font-size: 10px;
 }
 
 .stripe-footer {
@@ -270,9 +286,12 @@ select, option, input, label, button, textarea {
     width: 100%;
 }
 
+.footer-photo {
+    justify-content: center;
+}
+
 .contacts {
     font-size: 10px;
-    background-image: url(../img/footer-photo.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -280,6 +299,6 @@ select, option, input, label, button, textarea {
     flex-direction: column;
     justify-content: center;
     min-height: 25px;
-    max-height: 75px;
+    max-height: 400px;
     width: 100%;
 }
