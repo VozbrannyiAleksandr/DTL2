@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Aladin|Muli&display=swap');
 
+.container {
+    background-image: url(../img/background.jpg);
+}
+
 :root {
     font-family: 'Muli', sans-serif;
-    --main-color: black;
-    --accent-color: black;
+    --main-color: yellow;
+    --accent-color: yellow;
 
 }
 
@@ -22,6 +26,7 @@ h1, h2, h3, h4, h5, h6, p, div, nav, header, footer {
     max-width: 980px;
     margin: 0 auto;
 }
+
 .header-stripe {
     background-image: url(../img/stripe.jpg);
     background-position: center;
@@ -72,6 +77,16 @@ h1, h2, h3, h4, h5, h6, p, div, nav, header, footer {
 .banner img {
     width: 100%;
 }
+
+h3 {
+    font-size: 12px;
+}
+
+.banner h3 {
+    font-size: 12px;
+    color: yellow;
+}
+
 .closing-stripe {
     background-image: url(../img/stripecrop.jpg);
     background-position: center;
@@ -98,6 +113,7 @@ h1, h2, h3, h4, h5, h6, p, div, nav, header, footer {
 .form-article  h3 {
     font-family: 'Muli', sans-serif;
     font-size: 0.8rem;
+    color: yellow;
     text-align: center;
     margin: 0;
 }
@@ -163,6 +179,10 @@ select, option, input, label, button, textarea {
     height: auto;
 }
 
+.video-text {
+    color: yellow;
+}
+
 .history-article {
     background-image: url(../img/stripe.jpg);
     background-position: center;
@@ -181,8 +201,8 @@ select, option, input, label, button, textarea {
 }
 
 .history-photo img {
-    padding: 5px;
-    margin: 5px;
+    padding: 0px;
+    margin: 0px;
     width: 100%;
     height: auto;
 }
@@ -190,12 +210,15 @@ select, option, input, label, button, textarea {
 @media (min-width: 550px) {
     .history-photo img {
     float: left;
-    width: 50%;
+    width: 40%;
     height: auto;
+    padding: 5px;
+    margin: 5px;
     }
 }
 
 .history-text {
+    color: yellow;
     padding: 5px;
     margin: 5px;
 }
@@ -206,9 +229,12 @@ select, option, input, label, button, textarea {
 
 @media (min-width: 550px) {
     .history-photo1 img {
+    display: block;
     float: right;
-    width: 50%;
+    width: 40%;
     height: auto;
+    padding: 5px;
+    margin: 5px;
     }
 }
 
@@ -230,6 +256,7 @@ select, option, input, label, button, textarea {
     margin: 5px;
     display: block;
     width: 95%;
+    height: auto;
 }
 
 @media (min-width: 560px) {
@@ -264,30 +291,29 @@ select, option, input, label, button, textarea {
 }
 
 .map img {
-    width: 75%;
+    float: left;
+    width: 50%;
     height: auto;
     margin: 5px;
     padding: 5px;
 }
 .location-text {
+    color: yellow;
     font-size: 10px;
 }
 
 .stripe-footer {
     background-image: url(../img/stripecrop.jpg);
-    background-position: center;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
     min-height: 25px;
     max-height: 75px;
     width: 100%;
 }
 
 .footer-photo {
-    justify-content: center;
+    background-image: url(../img/footer-photo.jpg);
+    display: block;
+    position: absolute;
 }
 
 .contacts {
