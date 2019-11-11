@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Aladin|Muli&display=swap');
+
+.container {
+    background-image: url(../img/background.jpg);
+}
+
+.conteiner {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+:root {
+    font-family: 'Muli', sans-serif;
+    --main-color: yellow;
+    --accent-color: yellow;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p, div, nav, header, footer {
+    margin: 0;
+    padding: 0;
+}
+
+.header-stripe {
+    background-image: url(../img/stripe.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 75px;
+    max-height: 200px;
+    width: 100%;
+}
+
+.top {
+
+    justify-content: center;
+}
+
+.logo {
+    font-family: 'Aladin', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+.menu {
+    font-size: 1rem;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+    margin: 1vh;
+}
+
+.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+.menu a:hover {
+    border: 1px solid var(--accent-color);
+
+}
+
+.banner img {
+    width: 100%;
+}
+
+.form-article {
+    background-image: url(../img/stripe.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 75px;
+    max-height: 200px;
+    width: 100%;
+}
+
+.form-article h2 {
+    font-size: 15px;
+}
+
+.form-text {
+    color: yellow;
+}
+
+.stripe-footer {
+    background-image: url(../img/stripecrop.jpg);
+    background-size: cover;
+    min-height: 25px;
+    max-height: 75px;
+    width: 100%;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    min-height: 25px;
+    max-height: 400px;
+    width: 100%;
+}
+
+.contacts-logo h1 {
+    color: yellow;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+.chanels {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-info {
+    color: yellow;
+    display: flex;
+    font-size: 12px;
+}
+
+.tel {
+    color: yellow;
+    font-size: 5px;
+    align-self: center;
+}
