@@ -77,6 +77,21 @@ h1, h2, h3, h4, h5, h6, p, div, nav, header, footer {
     width: 100%;
 }
 
+.form_section {
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(89, 89, 89, 0.7);
+    border-radius: 5px;
+    padding: 11px;
+}
+
+.formposition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .form-article {
     background-image: url(../img/stripe.jpg);
     background-position: center;
@@ -98,6 +113,22 @@ h1, h2, h3, h4, h5, h6, p, div, nav, header, footer {
     color: yellow;
 }
 
+.fillIn h3 {
+    text-align: center;
+}
+
+.haveYouEver {
+    text-align: center;
+}
+
+.rateUs {
+    text-align: center;
+}
+
+.howDidYou {
+    text-align: center;
+}
+
 .stripe-footer {
     background-image: url(../img/stripecrop.jpg);
     background-size: cover;
@@ -114,11 +145,27 @@ h1, h2, h3, h4, h5, h6, p, div, nav, header, footer {
     width: 100%;
 }
 
-.contacts-logo h2 {
+.contacts-logo h1 {
     color: yellow;
     display: flex;
     justify-content: space-around;
-    font-size: 30px;
+    font-size: 20px;
+}
+
+.icons-contactsFacebook {
+	display: flex;
+	align-items: center;
+	color: yellow;
+	font-size: 10px;
+
+}
+
+.icons-contactsYoutube {
+	display: flex;
+	align-items: center;
+	color: yellow;
+	font-size: 10px;
+	
 }
 
 .chanels {
@@ -133,7 +180,14 @@ h1, h2, h3, h4, h5, h6, p, div, nav, header, footer {
 }
 
 .tel {
+	display: flex;
+    flex-direction: column;
     color: yellow;
     font-size: 5px;
     align-self: center;
+
+}
+
+.tel h2 {
+    font-size: 10px;
 }
