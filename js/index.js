@@ -7,7 +7,6 @@ function login(e) {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            // 'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: JSON.stringify({
             name: document.querySelector('.form-box input[name=username]').value,
@@ -15,9 +14,7 @@ function login(e) {
             tel: document.querySelector('.form-box input[name=tel]').value
         })
     })
-        .then(_ => document.querySelector('.login-form').reset());
 }
-
 
 document.querySelector('.get-ajax-html').addEventListener('click', getAjaxHtml);
 
@@ -28,6 +25,6 @@ function getAjaxHtml() {
             document.querySelector('.html-placeholder').innerHTML = xhr.responseText;
         }
     }
-    xhr.open('get', 'client-data.html', true);
+    xhr.open('get', 'driftTrike.html', true);
     xhr.send();
 }
