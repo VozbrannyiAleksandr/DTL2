@@ -303,35 +303,6 @@ select, option, input, label, button, textarea {
 
 }
 
-.map img {
-    align-self: center;
-    width: 80%;
-    height: auto;
-    margin: 20px;
-    padding: 10px;
-}
-
-@media (min-width: 560px) {
-    .map img {
-        align-self: center;
-        width: 80%;
-        height: auto;
-        margin: 30px;
-        padding: 20px;
-    }
-}
-
-@media (min-width: 690px) {
-    .map img {
-        align-self: center;
-        float: left;
-        width: 50%;
-        height: auto;
-        margin: 30px;
-        padding: 20px;
-    }
-}
-
 .location-text h3{
     font-size: 3px;
     display: none;
