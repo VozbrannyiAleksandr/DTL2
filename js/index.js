@@ -28,3 +28,4 @@ function getAjaxHtml() {
     xhr.open('get', 'driftTrike.html', true);
     xhr.send();
 }
+

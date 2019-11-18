@@ -136,8 +136,8 @@
                         <h2>Location</h2>
                     </div>
                     <div class="locationContent">
-                        <div class="map">
-                            <img src="img/map.jpg" alt="map" width="350" height="250">
+                        <div id="wrap__map">
+                            <div id="map"></div>
                         </div>
                         <div class="location-text">
                             <h3>You can find us at Arena Lviv Parking place "P6" and we are open from:
@@ -188,6 +188,8 @@
                 </section>
             </footer>
         </div>
+        <script src="js/map.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDenlVaKjXSeUdYo_pHh82EdkpCmRaIy9Y&callback=initMap"></script>
         <script src="js/index.js"></script>
     </body>
 </html>
