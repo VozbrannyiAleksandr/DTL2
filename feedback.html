@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/feedback.css">
     </head>
     <body>
@@ -16,18 +17,36 @@
                     </div>
                     <ul class="menu">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a class="btn btn-outline-light" href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="feedback.html">Feedback</a>
+                            <a class="btn btn-outline-light" href="feedback.html">Feedback</a>
                         </li>
                         <li>
-                            <a href="https://www.google.com/maps/place/%D0%90%D1%80%D0%B5%D0%BD%D0%B0+%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2/@49.7731728,24.0271884,17.25z/data=!4m8!1m2!2m1!1slviv+drift+trike!3m4!1s0x473ae7c45ad648ef:0xf15582fcd2b48f5b!8m2!3d49.7748612!4d24.0276803">Map</a>
+                            <a class="btn btn-outline-light" href="https://www.google.com/maps/place/%D0%90%D1%80%D0%B5%D0%BD%D0%B0+%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2/@49.7731728,24.0271884,17.25z/data=!4m8!1m2!2m1!1slviv+drift+trike!3m4!1s0x473ae7c45ad648ef:0xf15582fcd2b48f5b!8m2!3d49.7748612!4d24.0276803">Map</a>
                         </li>
                         <li>
-                            <a href="contacts.html">Contacts</a>
+                            <a class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModalCenter" href="contacts.html">Contacts</a>
                         </li>
                     </ul>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">Our contacts</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
                 <div class="banner">
                     <p>
@@ -36,171 +55,102 @@
                 </div>
                 <div class="closing-stripe"></div>
             </header>
-            <section>
-                <section class="form">
-                    <div class="form-article">
-                        <h2>Answer a few questions so we could become better for you</h2>
+            <section class="form">
+                <div class="form-article">
+                    <h2>Answer a few questions so we could become better for you</h2>
+                </div>
+                <div class="form-text">
+                    <div class="fillIn">
+                        <h3>Fill in the form</h3>
                     </div>
-                    <div class="form-text">
-                        <div class="fillIn">
-                            <h3>Fill in the form</h3>
+                    <form class="formForm">
+                        <div class="form-group">
+                            <label for="yourName">Your name</label>
+                            <input type="email" class="form-control" id="yourName" placeholder="Your name">
                         </div>
-                        <div class="form_section">
-                            <!-- <form action="https://formspree.io/xeqjrpow" method="POST"> -->
-                            <div class="formposition">
-                                <div class="form1">
-                                    <label>
-                                        <input type="text" name="yourName" placeholder="Your Name">
-                                    </label>
-                                    <br>
-                                    <br>
-                                    <label>
-                                        <input type="tel" name="tel" placeholder="Tel">
-                                    </label>
-                                    <br>
-                                    <br>
-                                    <label>
-                                        <input type="email" name="email" placeholder="Email">
-                                    </label>
-                                    <br>
-                                    <br>
+                        <div class="form-group">
+                            <label for="tel">Telephone number</label>
+                            <input type="email" class="form-control" id="tel" placeholder="Your telephone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="yourEmail">Email address</label>
+                            <input type="email" class="form-control" id="yourEmail" placeholder="name@youremail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select multiple class="form-control" id="gender">
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="rate">Rate our service (1 - bad, 5 - perfect)</label>
+                            <select class="form-control" id="rate">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="rate">How did you know about us ?</label>
+                            <select class="form-control" id="rate">
+                            <option>YouTube</option>
+                            <option>Facebook</option>
+                            <option>Friends</option>
+                            </select>
+                            <label for="textArea">Your variant</label>
+                            <textarea class="form-control" id="textArea" rows="3"></textarea>
+                        </div>
+                    </form>              
+                </div>
+            </section>
+            <footer>
+                <section class="contacts">
+                    <div class="stripe-footer"></div>
+                    <div class="contacts-logo">
+                        <h1>Contacts</h1>
+                    </div>
+                    <div class="chanels">
+                        <div class="chanelIcons">
+                            <div class="icons-contactsFacebook">
+                                <div class="contact-info">
+                                    <p>
+                                        <img src="img/facebook-icon.svg.png" alt="map" width="50" height="50">
+                                    </p>
                                 </div>
-                                <div class="gender">
-                                    <label>Gender:</label>
-                                    <br>
-                                    <label>
-                                        <input type="radio" name="gender" value="male">Male
-                                    
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="gender" value="female">Female
-                                    
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="gender" value="other">Other
-                                    
-                                    </label>
-                                </div>
-                                <br>
-                                <br>
-                                <div class="haveYouEver">
-                                    <h3>Have you visited us before ?</h3>
-                                </div>
-                                <br>
-                                <div class="yesNo">
-                                    <label>
-                                        <input type="radio" name="Answer" value="Yes">Yes
-                                    
-                                    
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="Answer" value="No">No
-                                    
-                                    
-                                    </label>
-                                </div>
-                                <br>
-                                <br>
-                                <div class="rateUs">
-                                    <h3>Rate us</h3>
-                                </div>
-                                <br>
-                                <div class="serviceFun">
-                                    <label>
-                                        Service:
-                                    <br>
-                                        <input type="text" name="Service" id="what1" list="point">
-                                    </label>
-                                    <datalist id="point">
-                                        <option>5</option>
-                                        <option>4</option>
-                                        <option>3</option>
-                                        <option>2</option>
-                                        <option>1</option>
-                                    </datalist>
-                                    <br>
-                                    <br>
-                                    <label>
-                                        Fun:
-                                    <br>
-                                        <input type="text" name="Fun" id="what2" list="point1">
-                                    </label>
-                                    <datalist id="point1">
-                                        <option>5</option>
-                                        <option>4</option>
-                                        <option>3</option>
-                                        <option>2</option>
-                                        <option>1</option>
-                                    </datalist>
-                                    <br>
-                                    <br>
-                                </div>
-                                <div class="howDidYou">
-                                    <h3>How did you know ubout us?</h3>
-                                </div>
-                                <br>
-                                <div class="source">
-                                    <label>
-                                        Youtube
-			                            <input type="checkbox" name="YouTube" value="YouTube">
-                                    </label>
-                                    <br>
-                                    <label>
-                                        Facebook
-			                            <input type="checkbox" name="Facebook" value="Facebook">
-                                    </label>
-                                    <br>
-                                    <label>
-                                        Other source: <input type="text" name="Text" placeholder="Your variant">
-                                    </label>
-                                    <br>
-                                    <br>
-                                </div>
-                                <div class="submit">
-                                    <button id="btnSend">Send</button>
+                                <div class="textFacebook">
+                                    <h2>Facebook</h2>
                                 </div>
                             </div>
-</form></div></div></section>
-<footer>
-    <section class="contacts">
-        <div class="stripe-footer"></div>
-        <div class="contacts-logo">
-            <h1>Contacts</h1>
+                            <div class="icons-contactsYoutube">
+                                <div class="contact-info">
+                                    <p>
+                                        <img src="img/youtube-icon.png" alt="map" width="50" height="50">
+                                    </p>
+                                </div>
+                                <div class="textYoutube">
+                                    <h2>Youtube</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tel">
+                            <div class="numb1">
+                                <h2>+380(68) 633 92 21</h2>
+                            </div>
+                            <div class="numb2">
+                                <h2>+380(73) 170 99 78</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </footer>
         </div>
-        <div class="chanels">
-            <div class="chanelIcons">
-                <div class="icons-contactsFacebook">
-                    <div class="contact-info">
-                        <p>
-                            <img src="img/facebook-icon.svg.png" alt="map" width="50" height="50">
-                        </p>
-                    </div>
-                    <div class="textFacebook">
-                        <h2>Facebook</h2>
-                    </div>
-                </div>
-                <div class="icons-contactsYoutube">
-                    <div class="contact-info">
-                        <p>
-                            <img src="img/youtube-icon.png" alt="map" width="50" height="50">
-                        </p>
-                    </div>
-                    <div class="textYoutube">
-                        <h2>Youtube</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="tel">
-                <div class="numb1">
-                    <h2>+380(68) 633 92 21</h2>
-                </div>
-                <div class="numb2">
-                    <h2>+380(73) 170 99 78</h2>
-                </div>
-            </div>
-        </div>
-        <div class="footer-photo"></div>
-    </section>
-</footer>
-</section></div><script src="js/feedback.js"></script>
-</body></html>
+        <script src="js/feedback.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

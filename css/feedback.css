@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Aladin|Muli&display=swap');
 
+:root {
+    font-family: 'Muli', sans-serif;
+    --main-color: yellow;
+    --accent-color: yellow;
+}
+
 .container {
     background-image: url(../img/background.jpg);
 }
@@ -8,12 +14,6 @@
     width: 100%;
     max-width: 980px;
     margin: 0 auto;
-}
-
-:root {
-    font-family: 'Muli', sans-serif;
-    --main-color: yellow;
-    --accent-color: yellow;
 }
 
 body {
@@ -40,7 +40,6 @@ h1, h2, h3, h4, h5, h6, p, div, nav, header, footer {
 }
 
 .top {
-
     justify-content: center;
 }
 
@@ -77,21 +76,6 @@ h1, h2, h3, h4, h5, h6, p, div, nav, header, footer {
     width: 100%;
 }
 
-.form_section {
-    position: relative;
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: rgba(89, 89, 89, 0.7);
-    border-radius: 5px;
-    padding: 11px;
-}
-
-.formposition {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .form-article {
     background-image: url(../img/stripe.jpg);
     background-position: center;
@@ -103,30 +87,38 @@ h1, h2, h3, h4, h5, h6, p, div, nav, header, footer {
     min-height: 75px;
     max-height: 200px;
     width: 100%;
-}
+} 
 
 .form-article h2 {
     font-size: 15px;
+} 
+
+@media (min-width: 550px) {
+    .formForm {
+        width: 60%;
+    }
 }
 
 .form-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     color: yellow;
+    margin: 0;
 }
 
-.fillIn h3 {
-    text-align: center;
+@media (min-width: 550px) {
+    .form-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
 }
 
-.haveYouEver {
-    text-align: center;
-}
-
-.rateUs {
-    text-align: center;
-}
-
-.howDidYou {
-    text-align: center;
+.form-group label {
+    align-self: center;
 }
 
 .stripe-footer {

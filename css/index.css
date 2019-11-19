@@ -248,6 +248,22 @@ select, option, input, label, button, textarea {
     margin: 5px;
 }
 
+.textMore {
+    display: none
+} 
+
+@media (min-width: 550px) {
+    .textMore {
+    display: block;
+    }
+}
+
+@media (min-width: 550px) {
+    .btn {
+    display: none;
+    }
+} 
+
 .history-photo1 img {
     display: none;
 }
@@ -314,7 +330,7 @@ select, option, input, label, button, textarea {
     margin: 5px;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 550px) {
     .location-text h3 {
         display: flex;
         position: inherit;
@@ -324,7 +340,7 @@ select, option, input, label, button, textarea {
     }
 }
 
-@media (min-width: 690px) {
+@media (min-width: 550px) {
     .location-text h3 {
         display: flex;
         font-size: 15px;
