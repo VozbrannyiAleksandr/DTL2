@@ -76,6 +76,30 @@ h1, h2, h3, h4, h5, h6, p, div, nav, header, footer {
     width: 100%;
 }
 
+h3 {
+    font-size: 12px;
+}
+
+.banner h3 {
+    position: absolute;
+    width: 60%;
+    margin: 5px;
+    margin-top: -50px;
+    font-size: 9px;
+    color: yellow;
+}
+
+@media (min-width: 550px) {
+    .banner h3 {
+    position: absolute;
+    width: 40%;
+    margin: 15px;
+    margin-top: -120px;
+    font-size: 15px;
+    color: yellow;
+    }
+}
+
 .form-article {
     background-image: url(../img/stripe.jpg);
     background-position: center;
@@ -119,6 +143,10 @@ h1, h2, h3, h4, h5, h6, p, div, nav, header, footer {
 
 .form-group label {
     align-self: center;
+}
+
+.submit {
+    position: center;
 }
 
 .stripe-footer {
