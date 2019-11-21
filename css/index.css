@@ -2,8 +2,6 @@
 
 :root {
     font-family: 'Muli', sans-serif;
-    --main-color: yellow;
-    --accent-color: yellow;
 } 
 
 .container {
@@ -61,14 +59,9 @@ h1, h2, h3, h4, h5, h6, p, div, nav, header, footer {
 .menu a {
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--main-color);
+    color: yellow;
     border: 1px solid transparent;
     padding: 5px;
-}
-
-.menu a:hover {
-    border: 1px solid var(--accent-color);
-
 }
 
 .banner img {
@@ -321,7 +314,6 @@ select, option, input, label, button, textarea {
 
 .map {
     display: block;
-    position: center;
     width: 100%;
     min-height: 200px;
     max-height: 500px;
@@ -372,6 +364,12 @@ select, option, input, label, button, textarea {
 .contacts-logo h1 {
     font-size: 30px;
 }
+
+/* @media (min-width:550px) {
+    .contacts-logo h1 {
+        align-self: flex-start;
+    }
+} */
 
 .chanels {
     display: flex;

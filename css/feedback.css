@@ -2,9 +2,7 @@
 
 :root {
     font-family: 'Muli', sans-serif;
-    --main-color: yellow;
-    --accent-color: yellow;
-}
+} 
 
 .container {
     background-image: url(../img/background.jpg);
@@ -38,6 +36,7 @@ h1, h2, h3, h4, h5, h6, p, div, nav, header, footer {
 }
 
 .top {
+
     justify-content: center;
 }
 
@@ -60,14 +59,9 @@ h1, h2, h3, h4, h5, h6, p, div, nav, header, footer {
 .menu a {
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--main-color);
+    color: yellow;
     border: 1px solid transparent;
     padding: 5px;
-}
-
-.menu a:hover {
-    border: 1px solid var(--accent-color);
-
 }
 
 .banner img {
@@ -137,7 +131,11 @@ h3 {
 .submit {
     display: flex;
     flex-direction: row;
-    justify-content: center;      
+    justify-content: center;     
+}
+
+.submit button {
+    color: yellow;
 }
  
 
